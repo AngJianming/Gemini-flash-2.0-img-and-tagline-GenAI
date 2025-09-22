@@ -1,0 +1,62 @@
+{
+  "title": "Cymbal Tagline Generator Template",
+  "description": "",
+  "parameters": {
+    "temperature": 1,
+    "tokenLimits": 65535,
+    "topP": 1,
+    "groundingPromptConfig": {
+      "disabled": true,
+      "groundingConfig": {
+        "sources": [
+          {
+            "type": "UNSPECIFIED"
+          }
+        ]
+      }
+    },
+    "thinkingBudget": -1,
+    "safetyCatFilters": [
+      {
+        "category": "HATE_SPEECH",
+        "threshold": "OFF"
+      },
+      {
+        "category": "DANGEROUS_CONTENT",
+        "threshold": "OFF"
+      },
+      {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "threshold": "OFF"
+      },
+      {
+        "category": "HARASSMENT_CONTENT",
+        "threshold": "OFF"
+      }
+    ]
+  },
+  "testDataV2": [
+    {
+      "testData": {}
+    }
+  ],
+  "systemInstruction": {
+    "parts": [
+      {
+        "text": "Cymbal Direct is partnering with an outdoor gear retailer. They're launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line."
+      }
+    ]
+  },
+  "type": "freeform",
+  "prompt": {
+    "parts": [
+      {
+        "text": "Write a tagline for a durable backpack designed for hikers that makes them feel prepared. Consider styles like minimalist.: {_prediction_input_0}\n\n"
+      },
+      {
+        "text": "Product attributes"
+      }
+    ]
+  },
+  "model": "google/gemini-2.5-flash"
+}
