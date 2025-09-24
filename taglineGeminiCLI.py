@@ -62,8 +62,8 @@ def analyze_bouquet_image(project_id: str, location: str):
             break
 
 # Set your project and location
-project_id='<PROJECT_ID>'
-location='<REGION>'
+project_id='qwiklabs-gcp-04-61cab7cf603c'
+location='us-central1'
 
 # Run the function
 analyze_bouquet_image(project_id, location)
